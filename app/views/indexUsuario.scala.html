@@ -1,0 +1,34 @@
+@(webJarAssets: WebJarAssets)
+
+@main("SED")(webJarAssets) {
+
+<div ng-controller="userCtrl">
+
+    <div>
+        <div class="row app-header">
+            <!-- Employee search -->
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <input class="form-control" style="width: 70%;" type="text" ng-model="searchUser" placeholder="Buscar ..."/>
+        </div>
+            <!-- Alert messages -->
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div ng-repeat="alert in alerts">
+                <notification ng-model="alert"></notification>
+                </div>
+            </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <botton class="btn btn-success btn-sm add-button" style="font-weight: 600;" data-toggle="modal" data-target="#nuevoUsuarioModal">Agregar Usuario</botton>
+        </div>
+        </div>
+     </div>
+    <hr>
+
+    @views.html.usuario.usuarioList()
+    @views.html.usuario.nuevoUsuarioForm()
+    @views.html.usuario.editarUsuarioForm()
+</div>
+
+}
+
+ <script type="text/javascript" src="@routes.Assets.versioned("javascripts/cuser.js")"></script>

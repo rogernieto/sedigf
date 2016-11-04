@@ -1,0 +1,43 @@
+New log file opened at Thu Nov 03 22:16:49 CST 2016 by 7074@desconocido
+Taking next connection to: 46087
+New client attempting to connect on port: 59487-46087
+  Address = /127.0.1.1:46087
+This client on port 59487 has uuid b0db16fa-8814-464c-a6fe-a51b1bcce6ca configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b0db16fa-8814-464c-a6fe-a51b1bcce6ca
+Taking next connection to: 46087
+New client attempting to connect on port: 59488-46087
+  Address = /127.0.1.1:46087
+Handshake exception on socket: 59488
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 46087
+New client attempting to connect on port: 59489-46087
+  Address = /127.0.1.1:46087
+This client on port 59489 has uuid 0435f251-11e2-4eb5-85ba-5376770be928 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b0db16fa-8814-464c-a6fe-a51b1bcce6ca, activator-0435f251-11e2-4eb5-85ba-5376770be928
+Taking next connection to: 46087
+New client attempting to connect on port: 59492-46087
+  Address = /127.0.1.1:46087
+Handshake exception on socket: 59492
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 46087
+New client attempting to connect on port: 59493-46087
+  Address = /127.0.1.1:46087
+This client on port 59493 has uuid 6e34a3cc-f241-41b5-afd6-be21ed5e192b configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-b0db16fa-8814-464c-a6fe-a51b1bcce6ca, play-fork-run-6e34a3cc-f241-41b5-afd6-be21ed5e192b
+Taking next connection to: 46087

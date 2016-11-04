@@ -1,0 +1,8 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Descargas/sed/conf/evolutions,/home/desconocido/Descargas/sed/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Descargas/sed/conf/postgres.conf,/home/desconocido/Descargas/sed/target/scala-2.11/classes/postgres.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Descargas/sed/conf/logback.xml,/home/desconocido/Descargas/sed/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Descargas/sed/conf/routes,/home/desconocido/Descargas/sed/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Descargas/sed/conf/application.conf,/home/desconocido/Descargas/sed/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Descargas/sed/conf/evolutions/default,/home/desconocido/Descargas/sed/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Descargas/sed/conf/evolutions/default/1.sql,/home/desconocido/Descargas/sed/target/scala-2.11/classes/evolutions/default/1.sql)[0m

@@ -1,0 +1,45 @@
+@(param: Any)
+
+<form name="editarEdanForm" ng-submit="updateEdan()">
+    <div class="modal fade" id="editarEdanModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Editar Ficha Edan</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="entrevistador">Entrevistador</label>
+                        <input type="text" class="form-control" ng-model="selectedEdan.entrevistador" id="entrevistador" value="{{selectedEdan.entrevistador}}" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cargo">Cargo</label>
+                        <input type="text" class="form-control" ng-model="selectedEdan.cargo" value="{{selectedEdan.cargo}}" id="cargo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institucion">Institucion</label>
+                        <input type="text" class="form-control" ng-model="selectedEdan.institucion" id="institucion" required value="{{selectedEdan.institucionl}}">
+                    </div>
+
+                       <div class="form-group">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" class="form-control" ng-model="selectedEdan.telefono" value="{{selectedEdan.telefono}}" id="telefono" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" class="form-control" ng-model="selectedEdan.email" id="email" required value="{{selectedEdan.email}}">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" >Cancelar</button>
+                    <input type="submit" ng-disabled="editarEdanForm.$invalid" class="btn btn-warning" value="Actualizar" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

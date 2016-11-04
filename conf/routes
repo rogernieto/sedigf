@@ -1,0 +1,41 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                   controllers.Application.index
+
+GET     /usuarios                           controllers.Usuario.index
+
+GET     /fedan                              controllers.Edan.index
+
+
+# Rutas usuarios
+GET     /usu/list                           controllers.UsuarioController.list
+
+POST    /usu/create                         controllers.UsuarioController.create
+
+GET     /usu/edit                           controllers.UsuarioController.edit(usuId: Int)
+
+POST    /usu/update                         controllers.UsuarioController.update
+
+GET     /usu/delete                         controllers.UsuarioController.delete(usuId: Int)
+
+# Rutas ficha edan
+
+GET     /edan/list                           controllers.EdanController.list
+
+POST    /edan/create                         controllers.EdanController.create
+
+GET     /edan/edit                           controllers.EdanController.edit(edId: Int)
+
+POST    /edan/update                         controllers.EdanController.update
+
+GET     /edan/delete                         controllers.EdanController.delete(edId: Int)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                       controllers.Assets.versioned(path="/public", file: Asset)
+
+# WebJars
+GET     /webjars/*file                      controllers.WebJarAssets.at(file)
+

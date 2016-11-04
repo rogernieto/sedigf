@@ -1,0 +1,33 @@
+@(webJarAssets: WebJarAssets)
+
+@main("SED")(webJarAssets) {
+<div ng-controller="edCtrl">
+
+    <div>
+        <div class="row app-header">
+            <!-- Employee search -->
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <input class="form-control" style="width: 100%;" type="text" ng-model="searchEdan" placeholder="Buscar ..."/>
+        </div>
+            <!-- Alert messages -->
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div ng-repeat="alert in alerts">
+                <notification ng-model="alert"></notification>
+                </div>
+            </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <botton class="btn btn-success btn-sm add-button" style="font-weight: 600;" data-toggle="modal" data-target="#nuevoEdanModal">Agregar Ficha Edan</botton>
+        </div>
+        </div>
+     </div>
+    <hr>
+
+    @views.html.edan.edanList()
+    @views.html.edan.nuevoEdanForm()
+    @views.html.edan.editarEdanForm()
+
+</div>
+}
+
+<script type="text/javascript" src="@routes.Assets.versioned("javascripts/cedan.js")"></script>

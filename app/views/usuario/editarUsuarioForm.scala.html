@@ -1,0 +1,37 @@
+@(param: Any)
+
+<form name="editarUsuarioForm" ng-submit="updateUsuario()">
+    <div class="modal fade" id="editarUsuarioModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Editar Usuario</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" ng-model="selectedUsuario.nombre" id="nombre" value="{{selectedUsuario.nombre}}" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" class="form-control" ng-model="selectedUsuario.apellidos" value="{{selectedUsuario.apellidos}}" id="apellidos" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" ng-model="selectedUsuario.email" id="email" required value="{{selectedUsuario.email}}">
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" >Cancelar</button>
+                    <input type="submit" ng-disabled="editarUsuarioForm.$invalid" class="btn btn-warning" value="Actualizar" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

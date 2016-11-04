@@ -1,0 +1,30 @@
+<table class="table table-hover">
+    <thead>
+    <th>Entrevistador</th>
+    <th>Cargo</th>
+    <th>Insitucion</th>
+    <th>Telefono</th>
+    <th>Correo Electronico</th>
+    <th></th>
+    <th></th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="eds in fichas | filter: searchEdan">
+        <td>{{eds.entrevistador}}</td>
+        <td>{{eds.cargo}}</td>
+        <td>{{eds.institucion}}</td>
+        <td>{{eds.telefono}}</td>
+        <td>{{eds.email}}</td>
+        <td>
+            <i title="Edit" style="color: #128d36;" data-toggle="modal" data-target="#editarEdanModal" class="glyphicon glyphicon-edit cursorPointer" ng-click="editEdan(eds)">
+            </i>
+        </td>
+        <td>
+            <i title="Delete" style="color: #d85010;" class="glyphicon glyphicon-trash cursorPointer" ng-confirm-message="Seguro que desea borrar?" ng-confirm-click="deleteEdan(eds.id)">
+            </i>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<p style="color: rgb(110, 114, 114)">Mostrando <strong style="color: rgb(42, 41, 41);">{{ (fichas | filter:searchEdan).length }}</strong> de <strong style="color: rgb(16, 106, 135);">{{fichas.length}}</strong> Registros</p>
